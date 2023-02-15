@@ -1,0 +1,19 @@
+{
+  "name": "jummbox-desktop",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx electron-packager . --platform=win32,darwin,linux --arch=x64,armv7l,arm64 --icon ./icon.ico --out build --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^23.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}
