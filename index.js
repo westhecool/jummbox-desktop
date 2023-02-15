@@ -26,6 +26,8 @@ async function createWindow() {
         ...((data && data.bounds) ? data.bounds : { width: 800, height: 600 })
     });
 
+    mainWindow.removeMenu();
+
     mainWindow.loadFile('index.html');
 
     mainWindow.on('close', function () {
